@@ -1,0 +1,1235 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/beorn7/perks/quantile",
+			"repository": "https://github.com/beorn7/perks",
+			"vcs": "git",
+			"revision": "4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9",
+			"branch": "master",
+			"path": "/quantile",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/fortytw2/leaktest",
+			"repository": "https://github.com/fortytw2/leaktest",
+			"vcs": "git",
+			"revision": "3b724c3d7b8729a35bf4e577f71653aec6e53513",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/golang/glog",
+			"repository": "https://github.com/golang/glog",
+			"vcs": "git",
+			"revision": "23def4e6c14b4da8ac2ed8007337bc5eb5007998",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/golang/protobuf/proto",
+			"repository": "https://github.com/golang/protobuf",
+			"vcs": "git",
+			"revision": "925541529c1fa6821df4e44ce2723319eb2be768",
+			"branch": "master",
+			"path": "/proto",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/golang/protobuf/protoc-gen-go/descriptor",
+			"repository": "https://github.com/golang/protobuf",
+			"vcs": "git",
+			"revision": "925541529c1fa6821df4e44ce2723319eb2be768",
+			"branch": "master",
+			"path": "protoc-gen-go/descriptor",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/golang/protobuf/ptypes",
+			"repository": "https://github.com/golang/protobuf",
+			"vcs": "git",
+			"revision": "925541529c1fa6821df4e44ce2723319eb2be768",
+			"branch": "master",
+			"path": "ptypes",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/google/gofuzz",
+			"repository": "https://github.com/google/gofuzz",
+			"vcs": "git",
+			"revision": "24818f796faf91cd76ec7bddd72458fbced7a6c1",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/googleapis/gnostic/OpenAPIv2",
+			"repository": "https://github.com/googleapis/gnostic",
+			"vcs": "git",
+			"revision": "3a9aa21b3a230305f2b75bf7ebce87f9b94c29ca",
+			"branch": "master",
+			"path": "/OpenAPIv2",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/googleapis/gnostic/compiler",
+			"repository": "https://github.com/googleapis/gnostic",
+			"vcs": "git",
+			"revision": "3a9aa21b3a230305f2b75bf7ebce87f9b94c29ca",
+			"branch": "master",
+			"path": "compiler",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/googleapis/gnostic/extensions",
+			"repository": "https://github.com/googleapis/gnostic",
+			"vcs": "git",
+			"revision": "3a9aa21b3a230305f2b75bf7ebce87f9b94c29ca",
+			"branch": "master",
+			"path": "extensions",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/matttproud/golang_protobuf_extensions/pbutil",
+			"repository": "https://github.com/matttproud/golang_protobuf_extensions",
+			"vcs": "git",
+			"revision": "c12348ce28de40eed0136aa2b644d0ee0650e56c",
+			"branch": "master",
+			"path": "/pbutil",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/matttproud/golang_protobuf_extensions/testdata",
+			"repository": "https://github.com/matttproud/golang_protobuf_extensions",
+			"vcs": "git",
+			"revision": "c12348ce28de40eed0136aa2b644d0ee0650e56c",
+			"branch": "master",
+			"path": "testdata",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/onsi/ginkgo",
+			"repository": "https://github.com/onsi/ginkgo",
+			"vcs": "git",
+			"revision": "747514b53ddd06d5d37d096c1cb313cfe620d7d4",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/onsi/gomega",
+			"repository": "https://github.com/onsi/gomega",
+			"vcs": "git",
+			"revision": "4fc17627b66f18840f3604eec277fe1af7f6d4a5",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/prometheus/client_golang",
+			"repository": "https://github.com/prometheus/client_golang",
+			"vcs": "git",
+			"revision": "f4fb1b73fb099f396a7f0036bf86aa8def4ed823",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/prometheus/client_model/go",
+			"repository": "https://github.com/prometheus/client_model",
+			"vcs": "git",
+			"revision": "99fa1f4be8e564e8a6b613da7fa6f46c9edafc6c",
+			"branch": "master",
+			"path": "/go",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/prometheus/common/expfmt",
+			"repository": "https://github.com/prometheus/common",
+			"vcs": "git",
+			"revision": "89604d197083d4781071d3c65855d24ecfb0a563",
+			"branch": "master",
+			"path": "/expfmt",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg",
+			"repository": "https://github.com/prometheus/common",
+			"vcs": "git",
+			"revision": "89604d197083d4781071d3c65855d24ecfb0a563",
+			"branch": "master",
+			"path": "internal/bitbucket.org/ww/goautoneg",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/prometheus/common/model",
+			"repository": "https://github.com/prometheus/common",
+			"vcs": "git",
+			"revision": "89604d197083d4781071d3c65855d24ecfb0a563",
+			"branch": "master",
+			"path": "model",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/prometheus/procfs",
+			"repository": "https://github.com/prometheus/procfs",
+			"vcs": "git",
+			"revision": "cb4147076ac75738c9a7d279075a253c0cc5acbd",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/net/context",
+			"repository": "https://go.googlesource.com/net",
+			"vcs": "git",
+			"revision": "309822c5b9b9f80db67f016069a12628d94fad34",
+			"branch": "master",
+			"path": "/context",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/net/html",
+			"repository": "https://go.googlesource.com/net",
+			"vcs": "git",
+			"revision": "309822c5b9b9f80db67f016069a12628d94fad34",
+			"branch": "master",
+			"path": "html",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/sync/errgroup",
+			"repository": "https://go.googlesource.com/sync",
+			"vcs": "git",
+			"revision": "fd80eb99c8f653c847d294a001bdf2a3a6f768f5",
+			"branch": "master",
+			"path": "/errgroup",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/sys/unix",
+			"repository": "https://go.googlesource.com/sys",
+			"vcs": "git",
+			"revision": "3dbebcf8efb6a5011a60c2b4591c1022a759af8a",
+			"branch": "master",
+			"path": "/unix",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/cases",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "cases",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/collate",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "collate",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/encoding",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "encoding",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/feature/plural",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "feature/plural",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/internal",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "internal",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/language",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "language",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/message",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "message",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/runes",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "runes",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/secure/bidirule",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "secure/bidirule",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/transform",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "transform",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/unicode/bidi",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "unicode/bidi",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/unicode/cldr",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "unicode/cldr",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/unicode/norm",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "unicode/norm",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/unicode/rangetable",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "unicode/rangetable",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/text/width",
+			"repository": "https://go.googlesource.com/text",
+			"vcs": "git",
+			"revision": "e19ae1496984b1c655b8044a65c0300a3c878dd3",
+			"branch": "master",
+			"path": "width",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/tools/go/ast/astutil",
+			"repository": "https://go.googlesource.com/tools",
+			"vcs": "git",
+			"revision": "25101aadb97aa42907eee6a238d6d26a6cb3c756",
+			"branch": "master",
+			"path": "go/ast/astutil",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/tools/go/buildutil",
+			"repository": "https://go.googlesource.com/tools",
+			"vcs": "git",
+			"revision": "25101aadb97aa42907eee6a238d6d26a6cb3c756",
+			"branch": "master",
+			"path": "go/buildutil",
+			"notests": true
+		},
+		{
+			"importpath": "golang.org/x/tools/go/loader",
+			"repository": "https://go.googlesource.com/tools",
+			"vcs": "git",
+			"revision": "25101aadb97aa42907eee6a238d6d26a6cb3c756",
+			"branch": "master",
+			"path": "/go/loader",
+			"notests": true
+		},
+		{
+			"importpath": "google.golang.org/appengine",
+			"repository": "https://github.com/golang/appengine",
+			"vcs": "git",
+			"revision": "5bee14b453b4c71be47ec1781b0fa61c2ea182db",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/check.v1",
+			"repository": "https://gopkg.in/check.v1",
+			"vcs": "git",
+			"revision": "20d25e2804050c1cd24a7eea1e7a6447dd0e74ec",
+			"branch": "v1",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/olivere/elastic.v3",
+			"repository": "https://gopkg.in/olivere/elastic.v3",
+			"vcs": "git",
+			"revision": "defe35fda8067a90957799162db966f5ea54342e",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/yaml.v2",
+			"repository": "https://gopkg.in/yaml.v2",
+			"vcs": "git",
+			"revision": "d670f9405373e636a5a2765eea47fac0c9bc91a4",
+			"branch": "v2",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/admissionregistration/v1alpha1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "admissionregistration/v1alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/admissionregistration/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "admissionregistration/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/apps/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "apps/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/authentication/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "authentication/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/authorization/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "authorization/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/autoscaling/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "autoscaling/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/autoscaling/v2beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "autoscaling/v2beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/batch/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "/batch/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/batch/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "batch/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/batch/v2alpha1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "batch/v2alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/certificates/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "certificates/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/core/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "core/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/events/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "events/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/extensions/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "extensions/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/imagepolicy/v1alpha1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "imagepolicy/v1alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/networking/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "networking/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/policy/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "policy/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/rbac/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "rbac/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/scheduling/v1alpha1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "scheduling/v1alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/settings/v1alpha1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "settings/v1alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/storage/v1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "storage/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/storage/v1alpha1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "storage/v1alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/storage/v1beta1",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "storage/v1beta1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/vendor/github.com/gogo/protobuf/proto",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "vendor/github.com/gogo/protobuf/proto",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/api/vendor/github.com/gogo/protobuf/sortkeys",
+			"repository": "https://github.com/kubernetes/api",
+			"vcs": "git",
+			"revision": "dc0dd48d5a5cae9f8736bb0643cfe6052e450f1b",
+			"branch": "master",
+			"path": "vendor/github.com/gogo/protobuf/sortkeys",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/api/equality",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/api/equality",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/api/errors",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/api/errors",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/api/meta",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/api/meta",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/api/resource",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/api/resource",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/api/testing",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/api/testing",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/apimachinery",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/apimachinery",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/apis/meta/fuzzer",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/apis/meta/fuzzer",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/apis/meta/internalversion",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/apis/meta/internalversion",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/apis/meta/v1",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/apis/meta/v1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/apis/meta/v1alpha1",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/apis/meta/v1alpha1",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/conversion",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/conversion",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/fields",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/fields",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/labels",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/labels",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/runtime",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/runtime",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/selection",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/selection",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/types",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/types",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/cache",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/cache",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/clock",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/clock",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/diff",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/diff",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/errors",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "/pkg/util/errors",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/framer",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/framer",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/httpstream",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/httpstream",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/intstr",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/intstr",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/json",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/json",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/mergepatch",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/mergepatch",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/net",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/net",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/remotecommand",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/remotecommand",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/runtime",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/runtime",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/sets",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/sets",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/strategicpatch",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/strategicpatch",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/validation",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/validation",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/wait",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/wait",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/util/yaml",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/util/yaml",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/version",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/version",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/pkg/watch",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "pkg/watch",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/third_party/forked/golang/json",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "third_party/forked/golang/json",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/third_party/forked/golang/netutil",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "third_party/forked/golang/netutil",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/third_party/forked/golang/reflect",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "third_party/forked/golang/reflect",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/davecgh/go-spew/spew",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/davecgh/go-spew/spew",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/docker/spdystream",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/docker/spdystream",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/elazarl/goproxy",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/elazarl/goproxy",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/ghodss/yaml",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/ghodss/yaml",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/gogo/protobuf/proto",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/gogo/protobuf/proto",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/gogo/protobuf/sortkeys",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/gogo/protobuf/sortkeys",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/golang/groupcache/lru",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/golang/groupcache/lru",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/golang/protobuf/proto",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/golang/protobuf/proto",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/golang/protobuf/ptypes",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/golang/protobuf/ptypes",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/googleapis/gnostic/OpenAPIv2",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/googleapis/gnostic/OpenAPIv2",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/googleapis/gnostic/compiler",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/googleapis/gnostic/compiler",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/googleapis/gnostic/extensions",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/googleapis/gnostic/extensions",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/hashicorp/golang-lru",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/hashicorp/golang-lru",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/json-iterator/go",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/json-iterator/go",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/pmezard/go-difflib/difflib",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/pmezard/go-difflib/difflib",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/spf13/pflag",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/spf13/pflag",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/stretchr/testify/assert",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/stretchr/testify/assert",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/github.com/stretchr/testify/require",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/github.com/stretchr/testify/require",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/net/http2",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/net/http2",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/net/idna",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/net/idna",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/net/lex/httplex",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/net/lex/httplex",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/text/secure/bidirule",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/text/secure/bidirule",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/text/transform",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/text/transform",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/text/unicode/bidi",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/text/unicode/bidi",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/golang.org/x/text/unicode/norm",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/golang.org/x/text/unicode/norm",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/gopkg.in/inf.v0",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/gopkg.in/inf.v0",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/apimachinery/vendor/gopkg.in/yaml.v2",
+			"repository": "https://github.com/kubernetes/apimachinery",
+			"vcs": "git",
+			"revision": "150d32b09b5966b39cb02d7945f0d1bc7b9f1a19",
+			"branch": "master",
+			"path": "vendor/gopkg.in/yaml.v2",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/client-go",
+			"repository": "https://github.com/kubernetes/client-go",
+			"vcs": "git",
+			"revision": "4b76cf9824ec474ca9b122449fee23807a51e786",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "k8s.io/kube-openapi/pkg/util/proto",
+			"repository": "https://github.com/kubernetes/kube-openapi",
+			"vcs": "git",
+			"revision": "275e2ce91dec4c05a4094a7b1daee5560b555ac9",
+			"branch": "master",
+			"path": "/pkg/util/proto",
+			"notests": true
+		}
+	]
+}
