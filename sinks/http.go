@@ -142,11 +142,12 @@ func (h *HTTPSink) flushBuffer() {
 func (h *HTTPSink) sendEntries(entries []*api_v1.Event) {
 	glog.V(4).Infof("Sending %d entries to Elasticsearch", len(entries))
 
-	for _, event := range entries {
-		glog.Infof("Orig obj: %v", event.InvolvedObject)
+	if err := doHttpRequest(h.config, entries); err != nil {
+		// TODO how to recovery?
+		FailedSentEntryCount.Add(float64(len(entries)))
+	} else {
+		SuccessfullySentEntryCount.Add(float64(len(entries)))
 	}
-
-	SuccessfullySentEntryCount.Add(float64(len(entries)))
 
 	<-h.concurrencyChannel
 

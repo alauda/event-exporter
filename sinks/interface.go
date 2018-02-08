@@ -17,6 +17,14 @@ var (
 		[]string{"component"},
 	)
 
+	FailedSentEntryCount = prometheus.NewCounter(
+		prometheus.CounterOpts{
+			Name:      "successfully_sent_entry_count",
+			Help:      "Number of events, successfully ingested by output sink",
+			Subsystem: "output_sink",
+		},
+	)
+
 	SuccessfullySentEntryCount = prometheus.NewCounter(
 		prometheus.CounterOpts{
 			Name:      "successfully_sent_entry_count",
