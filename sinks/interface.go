@@ -41,3 +41,9 @@ type Sink interface {
 
 	Run(stopCh <-chan struct{})
 }
+
+type SinkCommonConf struct {
+	FlushDelay     time.Duration
+	MaxBufferSize  int
+	MaxConcurrency int
+}
