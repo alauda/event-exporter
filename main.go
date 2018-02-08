@@ -21,7 +21,7 @@ import (
 const (
 	sinkNameElasticSearch = "elasticsearch"
 	sinkNameKafka         = "kafka"
-	sinkNameHTTPOutput    = "http"
+	sinkNameHTTP          = "http"
 )
 
 var (
@@ -29,7 +29,14 @@ var (
 	prometheusEndpoint = flag.String("prometheus-endpoint", ":80", "Endpoint on which to "+
 		"expose Prometheus http handler")
 	sinkName              = flag.String("sink", sinkNameElasticSearch, "Sink type to save the exported events: elasticsearch/kafka/http")
-	elasticsearchEndpoint = flag.String("elasticsearch", "http://elasticsearch:9200/", "Elasticsearch endpoint")
+	elasticsearchEndpoint = flag.String("elasticsearch-server", "http://elasticsearch:9200/", "Elasticsearch endpoint")
+
+	// for http sink
+	httpEndpoint = flag.String("http-endpoint", "", "Http endpoint")
+	httpAuth     = flag.String("auth", "token", "Http auth method: basic or token")
+	httpToken    = flag.String("token", "", "Token header and value for http token auth")
+	httpUsername = flag.String("username", "", "Username for http basic auth")
+	httpPassword = flag.String("password", "", "Nassword for http basic auth")
 )
 
 func newSystemStopChannel() chan struct{} {
@@ -66,9 +73,20 @@ func main() {
 	if *sinkName == sinkNameElasticSearch {
 		config := sinks.DefaultElasticSearchConf()
 		config.Endpoint = *elasticsearchEndpoint
-		outSink, err = sinks.NewElasticSearchOut(config)
+		outSink, err = sinks.NewElasticSearchSink(config)
 		if err != nil {
 			glog.Fatalf("Failed to initialize elasticsearch output: %v", err)
+		}
+	} else if *sinkName == sinkNameHTTP {
+		config := sinks.DefaultHTTPConf()
+		config.Endpoint = httpEndpoint
+		config.Auth = httpAuth
+		config.Token = httpToken
+		config.Username = httpUsername
+		config.Password = httpPassword
+		outSink, err = sinks.NewHTTPSink(config)
+		if err != nil {
+			glog.Fatalf("Failed to initialize http output: %v", err)
 		}
 	} else {
 		fmt.Fprintf(os.Stderr, "Usage of %s:\n", os.Args[0])

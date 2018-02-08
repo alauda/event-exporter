@@ -8,15 +8,13 @@ import (
 )
 
 type ElasticSearchConf struct {
-	Endpoint       string
-	User           string
-	Password       string
-	FlushDelay     time.Duration
-	MaxBufferSize  int
-	MaxConcurrency int
+	SinkCommonConf
+	Endpoint string
+	User     string
+	Password string
 }
 
-type ElasticSearchOut struct {
+type ElasticSearchSink struct {
 	config          *ElasticSearchConf
 	esClient        *elastic.Client
 	beforeFirstList bool
@@ -33,13 +31,15 @@ type ElasticSearchOut struct {
 
 func DefaultElasticSearchConf() *ElasticSearchConf {
 	return &ElasticSearchConf{
-		FlushDelay:     defaultFlushDelay,
-		MaxBufferSize:  defaultMaxBufferSize,
-		MaxConcurrency: defaultMaxConcurrency,
+		SinkCommonConf: SinkCommonConf{
+			FlushDelay:     defaultFlushDelay,
+			MaxBufferSize:  defaultMaxBufferSize,
+			MaxConcurrency: defaultMaxConcurrency,
+		},
 	}
 }
 
-func NewElasticSearchOut(config *ElasticSearchConf) (*ElasticSearchOut, error) {
+func NewElasticSearchSink(config *ElasticSearchConf) (*ElasticSearchSink, error) {
 	esClient, err := elastic.NewClient(elastic.SetSniff(false),
 		elastic.SetHealthcheckTimeoutStartup(10*time.Second), elastic.SetURL(config.Endpoint))
 	if err != nil {
@@ -49,7 +49,7 @@ func NewElasticSearchOut(config *ElasticSearchConf) (*ElasticSearchOut, error) {
 
 	glog.Infof("NewElasticSearchOut inited.")
 
-	return &ElasticSearchOut{
+	return &ElasticSearchSink{
 		esClient:           esClient,
 		beforeFirstList:    true,
 		logEntryChannel:    make(chan *api_v1.Event, config.MaxBufferSize),
@@ -61,13 +61,13 @@ func NewElasticSearchOut(config *ElasticSearchConf) (*ElasticSearchOut, error) {
 	}, nil
 }
 
-func (es *ElasticSearchOut) OnAdd(event *api_v1.Event) {
+func (es *ElasticSearchSink) OnAdd(event *api_v1.Event) {
 	ReceivedEntryCount.WithLabelValues(event.Source.Component).Inc()
 	glog.Infof("OnAdd %v", event)
 	es.logEntryChannel <- event
 }
 
-func (es *ElasticSearchOut) OnUpdate(oldEvent *api_v1.Event, newEvent *api_v1.Event) {
+func (es *ElasticSearchSink) OnUpdate(oldEvent *api_v1.Event, newEvent *api_v1.Event) {
 	var oldCount int32
 	if oldEvent != nil {
 		oldCount = oldEvent.Count
@@ -89,11 +89,11 @@ func (es *ElasticSearchOut) OnUpdate(oldEvent *api_v1.Event, newEvent *api_v1.Ev
 	es.logEntryChannel <- newEvent
 }
 
-func (es *ElasticSearchOut) OnDelete(*api_v1.Event) {
+func (es *ElasticSearchSink) OnDelete(*api_v1.Event) {
 	// Nothing to do here
 }
 
-func (es *ElasticSearchOut) OnList(list *api_v1.EventList) {
+func (es *ElasticSearchSink) OnList(list *api_v1.EventList) {
 	// Nothing to do else
 	glog.Infof("OnList %v", list)
 	if es.beforeFirstList {
@@ -101,7 +101,7 @@ func (es *ElasticSearchOut) OnList(list *api_v1.EventList) {
 	}
 }
 
-func (es *ElasticSearchOut) Run(stopCh <-chan struct{}) {
+func (es *ElasticSearchSink) Run(stopCh <-chan struct{}) {
 	glog.Info("Starting Elasticsearch sink")
 	for {
 		select {
@@ -124,13 +124,13 @@ func (es *ElasticSearchOut) Run(stopCh <-chan struct{}) {
 	}
 }
 
-func (es *ElasticSearchOut) flushBuffer() {
+func (es *ElasticSearchSink) flushBuffer() {
 	entries := es.currentBuffer
 	es.currentBuffer = nil
 	es.concurrencyChannel <- struct{}{}
 	go es.sendEntries(entries)
 }
-func (es *ElasticSearchOut) sendEntries(entries []*api_v1.Event) {
+func (es *ElasticSearchSink) sendEntries(entries []*api_v1.Event) {
 	glog.V(4).Infof("Sending %d entries to Elasticsearch", len(entries))
 
 	bulkRequest := es.esClient.Bulk()
@@ -153,7 +153,7 @@ func (es *ElasticSearchOut) sendEntries(entries []*api_v1.Event) {
 	glog.V(4).Infof("Successfully sent %d entries to Elasticsearch", len(entries))
 }
 
-func (es *ElasticSearchOut) setTimer() {
+func (es *ElasticSearchSink) setTimer() {
 	if es.timer == nil {
 		es.timer = time.NewTimer(es.config.FlushDelay)
 	} else {
@@ -161,7 +161,7 @@ func (es *ElasticSearchOut) setTimer() {
 	}
 }
 
-func (es *ElasticSearchOut) getTimerChannel() <-chan time.Time {
+func (es *ElasticSearchSink) getTimerChannel() <-chan time.Time {
 	if es.timer == nil {
 		return es.fakeTimeChannel
 	}
